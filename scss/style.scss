@@ -1,0 +1,108 @@
+//hojas secundarias
+@import "scss/html/infoterapia";
+@import "scss/html/descubre";
+@import "scss/html/contacto";
+@import "scss/html/acercademi";
+@import "html/index";
+
+@import "utilidades/variables.scss";
+@import "utilidades/mixin.scss";
+@import "utilidades/extend.scss";
+@import "utilidades/media.scss";
+
+
+
+
+
+
+
+//nesting
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//estilos del menu
+
+body {
+    background-color: #28651a;
+
+    div {
+        header {
+            nav {
+                ul {
+                    margin: 1rem;
+                    display: flex;
+                    flex-direction: row;
+                    list-style-type: none;
+                    justify-content: end;
+
+                    li {
+                        a {
+                            color: $colores;
+                            text-decoration: none;
+                            font-size: 1.3rem;
+                            padding: 1rem;
+
+                        }
+
+                        a:hover {
+                            font-weight: bold;
+                            background-color: rgb(115, 199, 108);
+                        }
+                    }
+                }
+            }
+
+            .logoPsi {
+                height: 6rem;
+            }
+        }
+
+
+        //estilos del footer
+
+        footer {
+            height: 15rem;
+            margin-top: 30%;
+            display: flex;
+            flex-direction: column;
+            .redes-footer {
+                text-decoration: none;
+                text-align: center;
+                a {
+                    img:hover {
+                        filter: drop-shadow(5px 5px 3px);
+                        color: blue;
+
+                    }
+                }
+            }
+
+            div {
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    display: flex;
+                    @extend flex;
+                    margin: 3%;
+                }
+            }
+
+            .forma {
+                width: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-self: center;
+                form{
+                    fieldset{
+                        display: flex;
+                    }
+                }
+
+            }
+        }
+    }
+}

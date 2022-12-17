@@ -1,0 +1,161 @@
+// VIsta Mobile 
+@media only screen and (min-width: 0px) and (max-width: 412px){
+    
+body {
+    div {
+        header {
+            .banner {
+                color: tomato;
+                text-align: center;
+                height: 10px;
+                display: flex;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+
+                    div {
+                        .animate__animated {
+                            margin: 2rem;
+                            font-size: 4rem;
+                            text-shadow: 2px 2px 5px black;
+                        }
+                    }
+
+                    .hijo-banner-2 {
+                        padding: 0.5rem;
+                        font-size: 30px;
+                        text-shadow: 2px 2px 5px black;
+                    }
+
+                    .hijo-banner-3 {
+                        font-size: 1.2rem;
+                        text-shadow: 2px 2px 5px black;
+                    }
+
+                    .boton {
+                        background-color: #51B0DF;
+                        color: whitesmoke;
+                        margin: 2rem;
+                        padding: 0.8rem;
+                        width: 7rem;
+                        font-size: 1.5rem;
+                        box-shadow: 3px 3px 5px black;
+                        text-shadow: 2px 2px 5px black;
+
+                        .boton:hover {
+                            background-color: #51B0DF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    main {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1px;
+        margin: 5rem;
+
+        .caja {
+            background-color: rgba(207, 223, 203, 0.616);
+            height: 1px;
+            width: 1px;
+
+            /* propiedad del margin */
+            border: 2px solid rgb(153, 230, 109);
+            margin: 1px;
+            padding: 5px;
+            box-shadow: 5px 5px 5px black;
+
+            .img-caja {
+                display: flex;
+                justify-content: center;
+            }
+
+            .titulo-caja {
+                font-size: 1.5rem;
+                text-align: center;
+                padding-bottom: 8%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .parrafo-caja {
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: center;
+            }
+        }
+    }
+
+    section {
+        .frase {
+            text-align: center;
+            color: wheat;
+            width: 100%;
+            margin-top: 4rem;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px rgb(92, 216, 75);
+        }
+    }
+    .autor{
+        text-align: center;
+        color: wheat;
+        text-shadow: 1px 1px 2px rgb(92, 216, 75);
+    }
+
+    .img_grid {
+        height: 1px;
+        width: 1px;
+        margin: 5rem;
+        display: grid;
+        grid-template-areas: 
+        "imgUno"
+        "imgDos"
+        "imgTres"
+        "imgCuatro"
+        "imgCinco"
+        "imgSeis"
+        "imgSiete";
+
+        .imgUno {
+            grid-area: imgUno;
+        }
+
+        .imgDos {
+            grid-area: imgDos;
+            text-align: center;
+        }
+
+        .imgTres {
+            grid-area: imgTres;
+        }
+
+        .imgCuatro {
+            grid-area: imgCuatro;
+            text-align: center;
+        }
+
+        .imgCinco {
+            grid-area: imgCinco;
+        }
+
+        .imgSeis {
+            grid-area: imgSeis;
+            text-align: center;
+        }
+
+        .imgSiete {
+            grid-area: imgSiete;
+        }
+    }
+}
+}    
+}
+
